@@ -1,14 +1,16 @@
 import Search from "@/components/search";
 import Table from "@/components/table";
+import { headers } from "next/headers";
 
-async function getForms() {
-  const response = await fetch('http://localhost:3000/api/forms');
+async function getForms(host: string) {
+  const response = await fetch(`http://${host}/api/forms`);
   if (!response.ok) throw new Error('Failed to fetch data');
   return response.json();
 }
 
 export default async function Home() {
-  const forms = await getForms();
+  const host = headers().get("host");
+  const forms = await getForms(host!);
 
   return (
     <>
