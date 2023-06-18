@@ -1,0 +1,25 @@
+.search-input {
+  display: flex;
+  border: thin solid var(--accent-secondary);
+
+  &:is(:hover, :has(input:focus)) {
+    border-color: var(--accent-primary);
+  }
+
+  & input {
+    flex: 1;
+    font: var(--sub-label);
+    color: var(--accent-primary);
+    padding: var(--half-spacing);
+
+    &::placeholder {
+      color: var(--accent-primary);
+    }
+  }
+
+  & button {
+    width: fit-content;
+    padding: 0;
+    padding-inline: var(--half-spacing);
+  }
+}

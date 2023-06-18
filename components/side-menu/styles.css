@@ -1,0 +1,10 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--half-spacing);
+
+  & button {
+    justify-content: flex-start;
+  }
+}

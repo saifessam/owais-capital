@@ -1,0 +1,37 @@
+.radio-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--half-spacing);
+
+  & span {
+    font: var(--sub-title);
+  }
+
+  & ul {
+    display: flex;
+    gap: var(--half-spacing);
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: calc(var(--half-spacing) / 4);
+      font: var(--sub-text);
+      text-transform: capitalize;
+      white-space: nowrap;
+      color: var(--accent-primary);
+      cursor: pointer;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      & svg {
+        width: 16px;
+        height: auto;
+
+        & path {
+          fill: var(--accent-primary);
+        }
+      }
+    }
+  }
+}

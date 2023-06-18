@@ -1,0 +1,12 @@
+import { ReactNode } from 'react';
+import './styles.css';
+
+type Props = {
+	children: ReactNode;
+};
+
+export default function Main({ children }: Props) {
+	return (
+		<main>{children}</main>
+	);
+}

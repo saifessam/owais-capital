@@ -1,0 +1,15 @@
+.text-input {
+  font: var(--sub-label);
+  color: var(--accent-primary);
+  padding: var(--half-spacing);
+  background-color: var(--background-primary);
+  border: thin solid var(--accent-secondary);
+
+  &:is(:hover, :focus) {
+    border-color: var(--accent-primary);
+  }
+
+  &::placeholder {
+    color: var(--accent-primary);
+  }
+}

@@ -1,0 +1,146 @@
+table {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow);
+  margin-top: var(--half-spacing);
+
+  & thead {
+    display: flex;
+    flex-direction: column;
+
+    & .switch-input {
+      margin: var(--spacing) auto;
+    }
+
+    & tr {
+      display: flex;
+      background-color: var(--accent-primary);
+      border-bottom: thin solid var(--text-secondary);
+
+      & th {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        padding: var(--half-spacing) var(--spacing);
+        font: var(--main-label);
+        color: var(--background-primary);
+
+        &:first-child {
+          flex: none;
+        }
+      }
+    }
+  }
+
+  & tbody {
+    display: flex;
+    flex-direction: column;
+
+    & tr {
+      display: flex;
+
+      &:not(:last-child) {
+        border-bottom: thin solid var(--text-secondary);
+      }
+
+      & td {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: var(--half-spacing) var(--spacing);
+        font: var(--sub-label);
+        color: var(--accent-primary);
+
+        &:first-child {
+          flex: none;
+        }
+
+        &#status {
+          & span {
+            font: inherit;
+            padding: calc(var(--half-spacing) / 2);
+            background-color: var(--text-secondary);
+          }
+
+          &[data-color='green'] {
+            & span {
+              color: var(--green);
+            }
+          }
+
+          &[data-color='yellow'] {
+            & span {
+              color: var(--yellow);
+            }
+          }
+        }
+
+        &#actions {
+          display: flex;
+          gap: var(--half-spacing);
+
+          & button {
+            padding: var(--half-spacing);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 767px) {
+  table {
+    overflow-x: auto;
+
+    & thead {
+      width: max-content;
+    }
+
+    & tbody {
+      & tr {
+        width: fit-content;
+      }
+    }
+
+    & th {
+      white-space: nowrap;
+
+      &:nth-child(2) {
+        min-width: 32ch;
+      }
+
+      &:nth-child(3) {
+        min-width: 20.5ch;
+      }
+
+      &:nth-child(4) {
+        min-width: 20.5ch;
+      }
+
+      &:nth-child(5) {
+        min-width: 20ch;
+      }
+    }
+
+    & td {
+      white-space: nowrap;
+
+      &:nth-child(2) {
+        min-width: 40ch;
+      }
+
+      &:nth-child(3) {
+        min-width: 25ch;
+      }
+
+      &:nth-child(4) {
+        min-width: 25ch;
+      }
+
+      &:nth-child(5) {
+        min-width: 25ch;
+      }
+    }
+  }
+}

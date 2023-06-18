@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"title": "Know Your Client Form",
+		"date": "May 17, 2023",
+		"status": "approved"
+	},
+	{
+		"id": 2,
+		"title": "Foreign Account Tax Compliance Act",
+		"date": "February 6, 2024",
+		"status": "approved"
+	},
+	{
+		"id": 3,
+		"title": "Custodian Form",
+		"date": "December 28, 2023",
+		"status": "approved"
+	},
+	{
+		"id": 4,
+		"title": "AML Form",
+		"date": "July 9, 2024",
+		"status": "approved"
+	},
+	{
+		"id": 5,
+		"title": "Know Your Client Form",
+		"date": "April 2, 2024",
+		"status": "approved"
+	},
+	{
+		"id": 6,
+		"title": "Know Your Client Form",
+		"date": "November 15, 2023",
+		"status": "submitted"
+	},
+	{
+		"id": 7,
+		"title": "Foreign Account Tax Compliance Act",
+		"date": "June 21, 2024",
+		"status": "under review"
+	},
+	{
+		"id": 8,
+		"title": "Custodian Form",
+		"date": "January 28, 2024",
+		"status": "pending"
+	},
+	{
+		"id": 9,
+		"title": "AML Form",
+		"date": "October 2, 2023",
+		"status": "pending"
+	},
+	{
+		"id": 10,
+		"title": "Know Your Client Form",
+		"date": "March 7, 2024",
+		"status": "submitted"
+	}
+]

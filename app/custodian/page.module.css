@@ -1,0 +1,72 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--half-spacing);
+}
+
+.wrapper .title {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing);
+  padding: var(--half-spacing);
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow);
+}
+
+.wrapper .title .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--half-spacing);
+  background-color: var(--accent-primary);
+  border-radius: 100%;
+}
+
+.wrapper .title .icon svg path {
+  fill: var(--background-primary);
+}
+
+.wrapper .title .labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrapper .title .labels span {
+  font: var(--sub-title);
+  color: var(--accent-primary);
+}
+
+.wrapper .title .labels small {
+  font: var(--sub-text);
+  color: var(--accent-secondary);
+}
+
+.wrapper .wrapper-row {
+  display: flex;
+  gap: var(--half-spacing);
+}
+
+.wrapper .wrapper-row aside {
+  width: 20%;
+}
+
+.wrapper .wrapper-row form {
+  flex: 1;
+  background-color: var(--background-secondary);
+  box-shadow: var(--shadow);
+}
+
+@media (width < 767px) {
+  .wrapper .wrapper-row {
+    flex-direction: column;
+  }
+
+  .wrapper .wrapper-row aside {
+    padding: var(--half-spacing);
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow);
+    width: 100%;
+  }
+}

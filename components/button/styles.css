@@ -1,0 +1,44 @@
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--half-spacing);
+  padding: var(--half-spacing) var(--spacing);
+  font: var(--sub-label);
+  cursor: pointer;
+
+  & svg {
+    width: 16px;
+    height: auto;
+
+    & svg path {
+      fill: var(--accent-primary);
+    }
+  }
+
+  &.primary {
+    color: var(--background-primary);
+    background-color: var(--accent-primary);
+
+    & svg path {
+      fill: var(--background-primary);
+    }
+  }
+
+  &.secondary {
+    background-color: var(--background-primary);
+    color: var(--accent-primary);
+
+    & svg path {
+      fill: var(--accent-primary);
+    }
+
+    &.bordered {
+      border: thin solid var(--accent-primary);
+    }
+  }
+
+  &.tertiary {
+    background-color: var(--yellow);
+  }
+}

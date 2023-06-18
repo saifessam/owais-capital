@@ -1,0 +1,8 @@
+.switch-input {
+  display: flex;
+
+  & button {
+    padding: var(--half-spacing);
+    text-transform: capitalize;
+  }
+}

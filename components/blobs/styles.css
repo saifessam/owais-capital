@@ -1,0 +1,33 @@
+#blobs {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  min-height: 100dvh;
+  z-index: -1;
+  overflow: hidden;
+
+  & svg {
+    position: absolute;
+    width: 450px;
+    height: auto;
+    aspect-ratio: 1/1;
+    z-index: -1;
+    filter: var(--blur);
+
+    &#top {
+      top: -30%;
+      left: 50%;
+      translate: -50% 0;
+    }
+
+    &#left {
+      bottom: 0;
+      left: -10%;
+    }
+
+    &#right {
+      bottom: 20%;
+      right: -10%;
+    }
+  }
+}

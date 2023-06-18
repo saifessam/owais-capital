@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: var(--double-spacing);
+}
+
+@media (width < 767px) {
+  main {
+    padding: var(--spacing);
+  }
+}
